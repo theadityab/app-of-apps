@@ -1,0 +1,5 @@
+environmentPrefix: test
+replicaCount: 2
+image:
+  tag: v2
+targetbranch: main
