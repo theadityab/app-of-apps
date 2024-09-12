@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.environmentPrefix }}-myapp-service
+  name: core-myapp-service
 spec:
   selector:
-    app: {{ .Values.environmentPrefix }}-myapp
+    app: core-myapp
   ports:
   - port: 8080
     protocol: TCP
