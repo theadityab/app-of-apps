@@ -15,10 +15,12 @@ spec:
     kind: Application
   project: default
   source:
-    path: Apps
+    path: /
     repoURL: https://github.com/theadityab/app-of-apps.git
     targetRevision: main
     directory:
       recurse: true
   syncPolicy:
     automated: null
+        syncOptions:
+          - CreateNamespace=true
