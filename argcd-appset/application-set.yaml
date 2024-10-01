@@ -8,8 +8,11 @@ spec:
   - list:
       elements:
       - namespace: dev
+        targetversion : release-1.1
       - namespace: qa
+        targetversion : release-1.1
       - namespace: stage
+        targetversion : release-1.1
   template:
     metadata:
       name: '{{namespace}}-core-app'
@@ -24,7 +27,7 @@ spec:
           - values-{{namespace}}.yaml
         path: argo-helm
         repoURL: https://github.com/theadityab/argo-testing.git
-        targetRevision: release-1.1
+        targetRevision: '{{cluster}}'
       syncPolicy:
         automated: null
         syncOptions:
