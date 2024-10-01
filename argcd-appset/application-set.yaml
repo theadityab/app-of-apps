@@ -27,7 +27,7 @@ spec:
           - values-{{namespace}}.yaml
         path: argo-helm
         repoURL: https://github.com/theadityab/argo-testing.git
-        targetRevision: {{targetversion}}
+        targetRevision: '{{targetversion}}'
       syncPolicy:
         automated: null
         syncOptions:
